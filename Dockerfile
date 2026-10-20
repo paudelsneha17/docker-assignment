@@ -11,7 +11,6 @@ WORKDIR /app
 # Copying these before the rest of the code lets Docker cache the
 # dependency layer, so rebuilds are faster when only app code changes.
 COPY package*.json ./
-
 # Install the app's dependencies listed in package.json.
 RUN npm install
 
