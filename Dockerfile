@@ -1,7 +1,7 @@
-# Use the official Node.js 18 LTS image as the base image.
+# Use the official Node.js 16 image as the base image.
 # This gives the container its own Node.js and npm, so Node does not
 # need to be installed on the host machine.
-FROM node:18
+FROM node:16
 
 # Set the working directory inside the container.
 # All following commands (COPY, RUN, CMD) run from /app.
